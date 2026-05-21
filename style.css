@@ -53,6 +53,107 @@ a {
   text-decoration: none;
 }
 
+#navbar {
+  min-height: 80px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 312px;
+}
+
+#navbar .container {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.container .logo {
+  display: inline-flex;
+  gap: 10px;
+
+  padding: 8px 12px;
+}
+
+.container .btn-page-link {
+  min-height: 48px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 12px;
+}
+
+#navbar .btn-wrapper {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.btn-wrapper .btn-icon {
+  min-height: 48px;
+  display: inline-flex;
+  gap: 8px;
+
+  border-radius: 4px;
+
+  padding: 12px;
+}
+
+.btn-icon .icon-person {
+  padding: 3px;
+}
+
+#hero {
+  width: 100%;
+
+  position: relative;
+}
+
+#hero > img {
+  max-width: 1920px;
+  width: 100%;
+
+  aspect-ratio: 1920/800;
+}
+
+#hero .content {
+  max-width: 586px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  position: absolute;
+  top: 289px;
+  left: 200px;
+}
+
+#hero .content .title {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#hero .content .btn {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-self: flex-start;
+  gap: 8px;
+
+  border-radius: 4px;
+
+  padding: 12px 24px;
+
+  background-color: #c0fa73;
+}
+
 #new-arrival {
   width: 100%;
 
@@ -160,6 +261,27 @@ a {
   object-fit: cover;
 }
 
+.card-wrapper .card {
+  min-height: 306px;
+  width: 100%;
+
+  display: flex;
+  gap: 10px;
+  position: relative;
+
+  background-color: #f8f9fa;
+}
+
+.card-wrapper .badge-small {
+  display: inline-flex;
+  gap: 10px;
+  position: absolute;
+
+  padding: 8px 12px;
+
+  background-color: #f5fee7;
+}
+
 #sale {
   width: 100%;
 
@@ -180,7 +302,10 @@ a {
 
   padding: 100px 80px;
 
-  background-color: black;
+  background: url(./assets/sale/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #sale .content {
@@ -457,11 +582,51 @@ section.style .content .wrapper .img2x2 {
   width: 100%;
 }
 
+.mina-bold-navbar-logo {
+  font-family: "Mina", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 4.4%;
+
+  color: #212529;
+}
+
 .noto-sans-tc {
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: Medium;
+}
+
+.noto-sans-tc-hero-title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: Bold;
+
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 5%;
+
+  color: #ffffff;
+}
+
+.noto-sans-tc-hero-title-sub {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: Bold;
+
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 5%;
+
+  color: #ffffff;
+
+  margin: 0;
 }
 
 .noto-sans-tc-new-arrival-title {
@@ -535,6 +700,19 @@ section.style .content .wrapper .img2x2 {
   margin: 0;
 }
 
+.noto-sans-tc-best-seller-badge-label {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: Medium;
+
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 5%;
+
+  color: #57a203;
+}
+
 .noto-sans-tc-sale-text-title {
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
@@ -577,7 +755,9 @@ section.style .content .wrapper .img2x2 {
   margin: 0;
 }
 
-.noto-sans-tc-sale-btn-label {
+.noto-sans-tc-nav-btn-label,
+.noto-sans-tc-sale-btn-label,
+.noto-sans-tc-hero-btn-label {
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
